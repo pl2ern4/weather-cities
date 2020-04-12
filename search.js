@@ -47,7 +47,7 @@ module.exports = {
             body:{
                 query:{
                     wildcard:{
-                        name:`*${param}*`
+                        name:`*${param.toLowerCase()}*`
                     }
                 }
             }

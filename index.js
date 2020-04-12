@@ -15,7 +15,8 @@ app.get('/search',(req,res,next)=>{
     });
 });
 
-app.set('port', process.env.APP_PORT || 3000);
+app.set('port', process.env.APP_PORT);
+
 
 client.ping({
   }, function(error) {
@@ -26,6 +27,6 @@ client.ping({
     }
 });
 
-app.listen(app.get('port'), ()=>{
-  console.log(`Express server listening on port, ${app.get('port')}`);
+app.listen(3000, ()=>{
+  console.log(`Express server listening on port 3000`);
 } );
