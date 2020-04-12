@@ -51,7 +51,7 @@ module.exports = {
                     }
                 }
             }
-        });
+        }).catch(err=>console.log("error",err));
         for(let j=0;j<body.hits.hits.length;j++){
             resultArray.push(body.hits.hits[j]['_source']);
         }
