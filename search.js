@@ -1,6 +1,6 @@
 const fs = require('fs');
-const client = require('./esConfig');
-const data = JSON.parse(fs.readFileSync(__dirname+'/city_list.json'));
+const client = require('./esConfig');console.log(__dirname);
+const data = JSON.parse(fs.readFileSync('./city_list.json'));
 
 const index='weather';
 const type="cities";
