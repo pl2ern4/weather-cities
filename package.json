@@ -11,6 +11,9 @@
     "build": "webpack",
     "prod": "node dist/api.bundle.js"
   },
+  "engines": {
+    "node": "10.15.x"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
